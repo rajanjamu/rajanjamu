@@ -1,0 +1,19 @@
+.nav-sidebar {
+  position: fixed;
+  margin: 1% 0;
+  height: 100vh;
+  // background: $light-white-color;
+  border-radius: 1%;
+  right: 0;
+  top: 42px;
+  // border-right: 1px solid $light-white-color;
+}
+
+.panel-heading {
+  font-size: 1.5em;
+  .list-group {
+    &.active {
+      background: red;
+    }
+  }
+}

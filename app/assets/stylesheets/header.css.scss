@@ -1,0 +1,56 @@
+.navbar {
+  position: fixed;
+  margin-bottom: 0;
+  min-height: 42px;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar-default {
+  background: $primary-color;
+  border-color: $primary-color;
+  border-radius: 0;
+  color: $white-color;
+}
+
+.navbar-header {
+  .navbar-brand {
+    height: 42px;
+    padding: 11px;
+    color: $white-color;
+    font-size: 1.5em;
+
+    &:hover {
+      color: $light-white-color;
+    }
+
+    .glyphicon {
+      font-size: 0.8em;
+    }
+  }
+}
+
+#bs-example-navbar-collapse-1 {
+  ul{
+    li {
+      height: 42px;
+      padding: 0;
+      font-size: 1.2em;
+      // background: red;
+
+      a {
+        height: 42px;
+        padding: 11px;
+        color: white;
+
+        &:hover {
+          color: $light-white-color;
+        }
+      }
+
+      &.active a {
+        background: $dark-primary-color;
+      }
+    }
+  }
+}

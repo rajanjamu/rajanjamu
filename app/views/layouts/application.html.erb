@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<%= render 'layouts/header' %>
+<div class="container">
+    <div class="row">
+      
+      <div class="col-sm-8">
+        <%= yield %>
+      </div>
+
+      <div class="col-sm-4 nav-sidebar">
+        <div class="panel panel-default">
+          <div class="panel-heading"><%= yield(:title) %></div>
+            <div class="list-group">
+              <a href="#" class="list-group-item active">Code Astra<span class="badge">3</span></a>
+              <a href="#" class="list-group-item">Stanford Ignite<span class="badge">1</span></a>
+              <a href="#" class="list-group-item">Embrace Innovations<span class="badge">5</span></a>
+              <a href="#" class="list-group-item">IIT Madras<span class="badge">7</span></a>
+              <a href="#" class="list-group-item">Joblessness<span class="badge">7</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+
+</body>
+</html>
