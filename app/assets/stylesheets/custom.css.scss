@@ -4,18 +4,31 @@ section {
   }
 
   h2 {
-
+    span {
+      margin-left: 2%;
+      font-size: 0.5em;
+    }
   }
 }
 
 .div-image {
-  margin-right: 20px;
+  margin-right: 2%;
   padding: 3%;
   border-radius: 100%;
   border: 1px solid silver;
-  
+
   .image {
     width: 100%;
+  }
+}
+
+.div-image-about {
+  margin-right: 2%;
+  margin-top: 3%;
+
+  .image-about {
+    width: 100%;
+    border-radius: 100%;
   }
 }
 
