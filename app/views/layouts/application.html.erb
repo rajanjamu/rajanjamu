@@ -17,19 +17,7 @@
         <%= yield %>
       </div>
 
-      <div class="col-sm-4 nav-sidebar">
-        <div class="panel panel-default">
-          <div class="panel-heading"><%= yield(:title) %></div>
-            <div class="list-group">
-              <a href="#codeastra" id="btn-codeastra" class="smooth_scroll list-group-item active">Code Astra<span class="badge">4</span></a>
-              <a href="#ignite" id="btn-ignite" class="smooth_scroll list-group-item">Stanford Ignite<span class="badge">1</span></a>
-              <a href="#embrace" id="btn-embrace" class="smooth_scroll list-group-item">Embrace Innovations<span class="badge">5</span></a>
-              <a href="#iitm" id="btn-iitm" class="smooth_scroll list-group-item">IIT Madras<span class="badge">7</span></a>
-              <a href="#jobless" id="btn-jobless" class="smooth_scroll list-group-item">Joblessness<span class="badge">7</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <%= render 'layouts/sidebar' %>
     </div>
   </div> 
 
