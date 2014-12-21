@@ -63,3 +63,4 @@ function removeActive() {
   $('a[href=#iitm]').removeClass('active'); 
   $('a[href=#jobless]').removeClass('active'); 
 }
+
