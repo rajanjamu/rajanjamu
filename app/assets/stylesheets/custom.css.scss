@@ -35,6 +35,11 @@ section {
 .icon {
   margin: 3%;
   font-size: 3.5em;
+  color: $silver-color;
+
+  &:hover {
+    color: black;
+  }
 }
 
 
