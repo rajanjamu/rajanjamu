@@ -1,0 +1,33 @@
+<%= provide(:title, 'Contact') %>
+
+<%= simple_form_for @contact, class: "form-horizontal main-form" do |f| %>
+
+<div class="input_grp container-fluid">
+  <div class="icon_container col-xs-1">
+    <span class="glyphicon glyphicon-user"></span>
+  </div>
+  <div class="col-xs-11">
+    <%= f.input :name, placeholder: "Name", label: false, input_html: {class: "contact_box"} %>
+  </div>
+</div>
+
+<div class="input_grp container-fluid">
+  <div class="icon_container col-xs-1">
+    <span class="glyphicon glyphicon-envelope"></span>
+  </div>
+  <div class="col-xs-11">
+    <%= f.input :email, placeholder: "Email ID", label: false, input_html: {class: "contact_box"} %>
+  </div>
+</div>
+
+<div class="input_grp container-fluid">
+  <div class="icon_container col-xs-1">
+    <span class="glyphicon glyphicon-comment"></span>
+  </div>
+  <div class="col-xs-11">
+    <%= f.input :message, placeholder: "Message", label: false, input_html: {class: "contact_box"} %>
+  </div>
+</div>
+
+<%= f.submit "Submit", class: "btn btn-primary btn-lg" %>
+<% end %>
